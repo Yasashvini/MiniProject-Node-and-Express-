@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+include page4.pug
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    style
+        include style5.css
+</head>
+body
+    table
+        tr
+            th Name
+            th Email ID
+            th Phone
+            th Faculty
+            each val in details
+                tr
+                    td #{val.name}
+                    td #{val.email}
+                    td #{val.phn}
+                    td #{val.faculty}
+</html>

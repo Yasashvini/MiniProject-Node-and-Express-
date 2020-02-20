@@ -1,0 +1,11 @@
+#nav { 
+    background: lightgray; 
+    overflow: auto;
+     } 
+
+#nav li 
+{ 
+     float: left; 
+     list-style-type: none; 
+     padding: 10px; 
+} 

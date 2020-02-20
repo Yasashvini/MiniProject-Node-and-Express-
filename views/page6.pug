@@ -1,0 +1,31 @@
+<html>
+<head>
+include page4.pug
+style
+    include style1.css
+    include style3.css
+</head>
+<body>
+<br>
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Courses" title="Type in a name">
+<div class="row" id="f">
+    each val,index in sub
+        if(index%2==0 && index<=sub.length-2)
+            <div class="column" style="background-color:#e6f3ff;">
+                h2=val
+                p=des[index]
+                input(type="button" class="butn" value="Register" id=val onclick="nextPage(id)")
+                input(type="button" class="butn" value="Display" name=val onclick="nextPage1(name)")
+            </div>
+        else if(index%2!=0 && index<=sub.length-2)
+            <div class="column" style="background-color: #cce6ff;">
+                h2=val
+                p=des[index]
+                input(type="button" value="Register" id=val onclick="nextPage(id)")
+                input(type="button" class="butn" value="Display" name=val onclick="nextPage1(name)")
+            </div>
+</div>
+script
+    include script1.js
+</body>
+</html>
