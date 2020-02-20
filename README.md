@@ -31,6 +31,7 @@ data is appended onto a file using appendFile function.
 All similar functions are grouped together in a separate file and exported using the exports keyword. the exported function are included in the main file using require. the functions are called when necessary.
 Promises and callbacks: The consumer code should wait for the producer code to produce data and for it to execute fully. Inorder to decide the order of execution of codes and make the consumer code wait for the producer code to complete, we use promises. the .then method is executed. Multiple .then() methods are used so as to execute code in succession. .then methods shall return values too.
 Templates : pug template is used to add more color and aesthetic sense to the web page. The .pug file can be deployed in the web page using res.render(filename). Data is also passed to the .pug file.
+Array of objects to temporarily store data about the users and the courses
 
 Files used:
 courses.txt: contains the names of the courses
